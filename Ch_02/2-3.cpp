@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-// 카보드로부터 두 개의 정수를 읽어 큰 수를 화면에 출력하라.
+// 키보드로부터 두 개의 정수를 읽어 큰 수를 화면에 출력하라.
 
 #include <iostream>
 using namespace std;
@@ -10,33 +9,9 @@ int main() {
 	cout << "두 수를 입력하라>>";
 	cin >> a >> b;
 
-	cout << "큰 수 = ";
-
-	if (a >= b) {
-		cout << a << endl;
-	}
-	else cout << b << endl;
+	if (a > b) cout << "큰 수 = " << a << endl;
+	else if (a < b)cout << "큰 수 = " << b << endl;
+	else cout << "두 수가 같습니다." << endl;
 
 	return 0;
-=======
-// 카보드로부터 두 개의 정수를 읽어 큰 수를 화면에 출력하라.
-
-#include <iostream>
-using namespace std;
-
-int main() {
-	int a, b;
-
-	cout << "두 수를 입력하라>>";
-	cin >> a >> b;
-
-	cout << "큰 수 = ";
-
-	if (a >= b) {
-		cout << a << endl;
-	}
-	else cout << b << endl;
-
-	return 0;
->>>>>>> 87080f397353b33f54598cf71212766956f8dbfd
 }
